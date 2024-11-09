@@ -303,6 +303,7 @@
 .form_group textarea,
 .form_group input:focus {
   outline-color: rgb(237, 178, 100);
+  resize: none;
 }
 
 .form_group input[type="submit"] {
