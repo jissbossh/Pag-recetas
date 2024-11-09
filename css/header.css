@@ -8,15 +8,15 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: rgb(237, 178, 100);
   padding: 10px;
 }
 
 .encabezado {
-  height: 4%;
   color: white;
-  position: relative;
-  z-index: 20;
 }
 
 .logo {

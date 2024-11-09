@@ -170,6 +170,7 @@
 /*RECETAS */
 
 .recetas-container {
+  padding: 20px;
   background-color: #f9d5c0;
   margin: 20px;
   border-radius: 10px;
@@ -178,47 +179,70 @@
 
 .recetas-container h2:first-child {
   text-align: center;
-  margin: 20px 0;
-  margin-top: 20px;
+  color: #3b1f1c;
+  font-size: 32px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
   gap: 20px;
+  margin: 20px 20px;
+}
+
+.info-recetas {
+  margin: 0 20px;
+}
+
+.boton-ver-receta {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  background-color: rgb(237, 178, 100);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.boton-ver-receta:hover {
+  background-color: rgb(230, 150, 10);
+  color: white;
 }
 
 .gallery_item {
+  border: 2px solid rgb(237, 178, 100);
   display: flex;
+  gap: 10px;
   text-align: center;
   background-color: white;
+  align-items: center;
 }
 
-.gallery_item h2 {
-  text-align: center;
-  width: 100%;
-}
-
-.info-recetas p {
-  text-align: left;
-  text-wrap: balance;
+.container-img-recetas {
+  margin: 10px 10px;
+  height: 250px;
 }
 
 .gallery_item img {
-  margin: 10px 10px;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .gallery_item img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .gallery_item p {
-  padding: 10px;
-  margin-top: 10px;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
   font-size: 16px;
   font-weight: bold;
   color: #333;
@@ -317,49 +341,24 @@
 .icon_social {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-.social_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #b22222;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.social-icon {
+  width: 100px;
+  height: 100px;
 }
 
-.social_icon:hover {
-  background-color: #8b0000;
-  transform: scale(1.1);
-}
-
-.social_icon img {
-  width: 10%;
-  border-radius: 50%;
+.social-icon img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
-.social_icon a {
-  pointer-events: none;
-}
-
-.facebook {
-  background-color: #3b5998;
-}
-
-.instagram {
-  background-color: #e4405f;
-}
-
-.twitter {
-  background-color: #1da1f2;
-}
-
-.youtube {
-  background-color: #ff0000;
+@media only screen and (max-width: 1050px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
