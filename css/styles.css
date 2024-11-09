@@ -169,27 +169,46 @@
 
 /*RECETAS */
 
+.recetas-container {
+  background-color: #f9d5c0;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recetas-container h2:first-child {
+  text-align: center;
+  margin: 20px 0;
+  margin-top: 20px;
+}
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 20px;
 }
 
 .gallery_item {
-  width: 30%;
+  display: flex;
   text-align: center;
   background-color: white;
 }
 
-.gallery_item img {
-  padding: 15px 25px;
+.gallery_item h2 {
+  text-align: center;
   width: 100%;
-  height: auto;
-  max-height: 200px;
+}
+
+.info-recetas p {
+  text-align: left;
+  text-wrap: balance;
+}
+
+.gallery_item img {
+  margin: 10px 10px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
