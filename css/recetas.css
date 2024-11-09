@@ -1,12 +1,8 @@
-.receta-titulo {
-
+.contenedor-img-receta {
+  width: 250px;
+  height: 250px;
 }
-.receta-descripcion {
 
-}
-.ingredientes{
-
-}
-.intrucciones{
-    
+.contenedor-img-receta img {
+  width: 100%;
 }
