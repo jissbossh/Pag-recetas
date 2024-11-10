@@ -73,7 +73,7 @@
   text-align: center;
 }
 
-.expo_recetas button {
+.expo_recetas a {
   background-color: #f77f00;
   color: white;
   padding: 10px 20px;
@@ -81,7 +81,7 @@
   cursor: pointer;
 }
 
-.expo_recetas button a {
+.expo_recetas a {
   list-style: none;
   text-decoration: none;
   display: block;
