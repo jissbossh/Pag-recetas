@@ -183,6 +183,10 @@
   font-size: 32px;
 }
 
+.recetas-container h2:hover {
+  text-decoration: underline;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
