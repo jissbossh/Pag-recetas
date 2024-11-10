@@ -1,26 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .recetas-container {
   display: flex;
   justify-content: space-between;
   margin: 20px;
   gap: 20px;
+  min-height: 80vh;
 }
 
 .receta {
   background-color: white;
   padding: 20px;
   border-radius: 25px;
-  width: 50%; 
-  position: relative;
+  width: 50%;
+  height: auto;
+  max-height: 80vh;
+  overflow: hidden;
 }
 
 .receta-titulo {
   font-size: 2rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .receta-descripcion {
   font-size: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.4;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .contenedor-img-receta {
@@ -28,12 +42,22 @@
   padding: 15px;
   border-radius: 25px;
   margin-bottom: 15px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .contenedor-img-receta img {
-  width: 100%;
+  width: 80%;
   height: auto;
-  border-radius: 8px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .derecha {
@@ -51,29 +75,29 @@
 .ingredientes h3 {
   margin-bottom: 10px;
   font-size: 1.8rem;
+  text-align: center; 
 }
 
 .ingredientes ul {
   padding-left: 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .instrucciones {
   padding: 20px;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
   border-radius: 15px;
 }
 
 .instrucciones h3 {
   margin-bottom: 10px;
   font-size: 1.8rem;
+  text-align: center; 
 }
 
 .instrucciones ol {
   padding-left: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
